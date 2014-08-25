@@ -28,8 +28,8 @@
 		{
 			if ($this->template == 'question' && qa_opt(qa_code_prettify_admin::PLUGIN_ENABLED)) {
 			    $js_url = qa_opt('site_url').'qa-plugin/'.AMI_CODE_PRETTYFY_DIR_NAME.'/assets/js/prettify.js' ;
-				if (!isset($this->content['script']['hljs_script'])) {
-					$this->content['script']['hljs_script'] = '<script src="'.$js_url.'" type="text/javascript"></script>' ;
+				if (!isset($this->content['script']['prettyfy_script'])) {
+					$this->content['script']['prettyfy_script'] = '<script src="'.$js_url.'" type="text/javascript"></script>' ;
 				}
 			}
 			qa_html_theme_base::head_script();
